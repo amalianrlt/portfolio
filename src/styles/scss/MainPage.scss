@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@500;900&display=swap");
+
+html,
+body {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header{
+  margin: 1rem 0;;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    font-size: 2rem;
+  }
+  .right-side{
+    display: flex;
+    h3{
+      font-weight: 300;
+      margin: 0 1rem;
+      &:hover{
+        color: #F60157;
+      }
+    }
+
+  }
+}
+
+.mainHero{
+  margin-top: 8rem;
+  height: 80vh;
+  h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: lighter;
+    margin-left: 4rem;
+  }
+  .hero-btn{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;;
+  }
+}
+
+.myProjects{
+  height: 200vh;
+  h5{
+    font-size: 1.5rem;
+  }
+  .latestProject{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    h1{
+      font-size: 3rem;
+    }
+    h3{
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+  }
+  .aboutProject{
+    margin-top: 12rem;
+    margin-left: 22rem;
+    h6{
+      font-weight: bolder;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #F60157;
+    }
+    h4{
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+  .protraImg{
+    margin: 15rem 0;
+    padding: 0 4rem;
+    .protraImage{
+      width: 100%;
+      // border: 1px solid rgba(246, 1, 87, 0.555);
+      border-radius: 10px;
+    }
+  }
+}
+
+.footer{
+  h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .socialMedia{
+    display: flex;
+    h3{
+      font-size: 1.8rem;
+      margin-right: 1rem;
+      font-weight: lighter;
+      margin-bottom: 4rem;
+    }
+  }
+  .copyright{
+    h5{
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+      strong{
+        font-weight: 900;
+      }
+    }
+  }
+}
