@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@500;600;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -33,109 +33,113 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem 4rem;
   position: fixed;
   width: 100%;
   z-index: 1000;
   background-color: rgba(235, 235, 235, 0.6);
-  box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.2), 0 6px 20px 0 rgba(163, 163, 163, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.2),
+    0 6px 20px 0 rgba(163, 163, 163, 0.19);
   .right-side {
     display: flex;
     transition: all 0.3s ease 0s;
     h3 {
-      font-weight: 500;
+      font-weight: 300;
       margin: 0 1rem;
       &:hover {
         color: #f60157;
-        font-weight: 900;
+        font-weight: 500;
       }
       a:hover {
         color: #f60157;
-        font-weight: 900;
+        font-weight: 500;
       }
     }
   }
 }
 
-  .mainHero {
-    padding-top: 12rem;
-    height: 90vh;
+.mainHero {
+  padding-top: 14rem;
+  padding-bottom: 12rem;
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    span:hover {
+      color: #f60157;
+    }
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: lighter;
+    margin-left: 4rem;
+    padding-right: 4rem;
+  }
+  h4 {
+    color: #f60157;
+    letter-spacing: -1px;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    a:hover {
+      color: #f60157;
+    }
+  }
+  .hero-btn {
+    margin-left: 4rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}
+
+.myProjects {
+  padding-top: 5rem;
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .latestProject {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
     h1 {
-      font-size: 4rem;
-      font-weight: 900;
-      margin-left: 4rem;
-      margin-bottom: 3rem;
-      margin-top: 2rem;
-      span:hover{
-        color: #f60157;
-      }
+      font-size: 3rem;
     }
     h3 {
       font-size: 1.5rem;
-      line-height: 2.5rem;
-      font-weight: lighter;
-      margin-left: 4rem;
+      font-weight: 100;
     }
-    h2{
+  }
+  .aboutProject {
+    margin-top: 12rem;
+    margin-left: 22rem;
+    h3 {
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
       color: #f60157;
-      margin-left: 4rem;
-      margin-top: 3rem;
-      font-size: 1.5rem;
-      a:hover{
-        color: #f60157;
-      }
     }
-    .hero-btn {
-      margin-left: 4rem;
-      margin-top: 3rem;
-      font-size: 1.5rem;
-      font-weight: bolder;
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 2rem;
     }
   }
-
-  .myProjects {
-    height: 250vh;
-    padding-top: 5rem;
-    h5 {
-      font-size: 1.5rem;
-    }
-    .latestProject {
-      margin-top: 5rem;
-      display: flex;
-      flex-direction: column;
-      h1 {
-        font-size: 3rem;
-      }
-      h3 {
-        font-size: 1.5rem;
-        font-weight: 100;
-      }
-    }
-    .aboutProject {
-      margin-top: 12rem;
-      margin-left: 22rem;
-      h2 {
-        font-weight: 800;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        color: #f60157;
-      }
-      h4 {
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 2rem;
-      }
-    }
-    .protraImg {
-      margin: 15rem 0;
-      padding: 0 4rem;
-      .protraImage {
-        width: 100%;
-        // border: 1px solid rgba(246, 1, 87, 0.555);
-        border-radius: 10px;
-      }
+  .protraImg {
+    margin: 15rem 0 6rem 0;
+    // padding: 0 4rem;
+    .protraImage {
+      width: 100%;
+      // border: 1px solid rgba(246, 1, 87, 0.555);
+      border-radius: 10px;
     }
   }
+}
 
 .footer {
   h2 {
@@ -151,10 +155,10 @@ header {
       margin-right: 1rem;
       font-weight: lighter;
       margin-bottom: 4rem;
-        a:hover {
-          color: #f60157;
-          font-weight: 900;
-        }
+      a:hover {
+        color: #f60157;
+        font-weight: 900;
+      }
     }
   }
   .copyright {
@@ -169,109 +173,110 @@ header {
   }
 }
 
-.aboutMe{
+.aboutMe {
   padding-top: 10rem;
   padding-left: 11rem;
   padding-right: 11rem;
   width: 100%;
   // max-width: 70rem;
-  h1{
-    font-size: 4rem;
+  h1 {
+    font-size: 3rem;
   }
-  h3{
+  h3 {
     font-size: 1.2rem;
     font-weight: lighter;
     line-height: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
-.reachOut{
+.reachOut {
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding-left: 12rem;
-  .connect{
+  .connect {
     margin-top: 3rem;
-    h1{
+    h1 {
       font-size: 2rem;
       margin: 1rem 0;
     }
-    h4{
+    h4 {
       font-weight: lighter;
       font-size: 1.2rem;
       line-height: 2rem;
     }
-    h2{
+    h2 {
       margin-top: 1rem;
       font-size: 2.2rem;
       font-weight: 900;
       letter-spacing: 1px;
-      a{
+      a {
         color: rgb(114, 114, 114);
       }
-      a:hover{
+      a:hover {
         color: #f60157;
       }
     }
   }
-  .icons{
+  .icons {
     display: flex;
     justify-content: flex-start;
     margin-top: 1rem;
     align-items: center;
-    a{
+    margin-bottom: 2rem;
+    a {
       margin-right: 1rem;
     }
   }
-  .skills{
+  .skills {
     padding-right: 7rem;
-    h1{
+    h1 {
       font-size: 1.8rem;
     }
-    .coding{
+    .coding {
       margin-top: 1rem;
       margin-bottom: 2rem;
-      h3{
-        font-weight: 200;
+      h3 {
+        font-weight: 300;
       }
     }
   }
-  .codingChild{
+  .codingChild {
     flex-wrap: wrap;
     display: flex;
-    margin-top: .5rem;
-    p{
-      margin-right: .5rem;
-      margin-top: .5rem;
+    margin-top: 0.5rem;
+    p {
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
     }
   }
 }
 
-.tagsButton{
+.tagsButton {
   display: inline-block;
-    border: 1px solid #dedede;
-    border-radius: 16px;
-    padding: 0.25em 1em;
-    margin-bottom: 5px;
-    margin-right: 2px;
-    line-height: 1.5em;
-    font-weight: 500;
-    color: #000;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  padding: 0.25em 1em;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: #000;
 }
 
-.tagsButton:hover{
+.tagsButton:hover {
   background-color: #f60157 !important;
-  color: #F8F8F8 !important;
+  color: #f8f8f8 !important;
 }
 
-.linkProject{
+.linkProject {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  a{
+  a {
     align-items: center;
   }
-  h5{
+  h5 {
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -280,25 +285,151 @@ header {
   }
 }
 
-.backTop{
+.backTop {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 3rem;
-  svg{
-    margin-right: 2rem;
-    margin-bottom: .5rem;
+  font-weight: 300;
+  svg {
+    font-weight: 300;
+    margin-right: 2.5rem;
+    margin-bottom: 0.5rem;
     color: rgb(77, 77, 77);
+    a:hover {
+      color: rgb(116, 116, 116);
+    }
   }
 }
 
-.myImg{
+.myImg {
   margin-left: 4rem;
   margin-top: 1rem;
+  border-radius: 5px;
   // filter:grayscale(100%);
-  width: 70%;
+  width: 60%;
   // border-radius: 50%;
   object-fit: cover;
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 }
+
+//responsive
+@media (max-width: 575.98px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .mainHero {
+    padding-top: 7rem;
+    h1 {
+      margin-left: 0;
+    }
+    h3 {
+      margin-left: 0;
+      padding-right: 0rem;
+    }
+    h4 {
+      margin-left: 0;
+    }
+    .desc {
+      justify-content: space-between;
+    }
+  }
+
+  .myProjects {
+    padding-top: 5rem;
+    .latestProject {
+      margin-top: 2rem;
+      h3 {
+        margin-top: 1rem;
+      }
+    }
+    .aboutProject {
+      margin-top: 2rem;
+      margin-left: 0rem;
+      h3 {
+        font-weight: 800;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #f60157;
+      }
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+      }
+    }
+    .protraImg {
+      margin: 2rem 0 4rem 0;
+    }
+  }
+  .myImg {
+    display: none;
+  }
+
+  .linkProject {
+    svg {
+      font-size: 25px !important;
+    }
+  }
+  .backTop {
+    svg {
+      font-size: 25px !important;
+    }
+  }
+
+  .aboutMe {
+    padding: 6rem 0 0 0;
+    width: 100%;
+    // max-width: 70rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .reachOut {
+    margin: 0;
+    padding:0 2rem;
+    .connect {
+      margin-top: 3rem;
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .icons {
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      svg {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+  html,
+  body {
+    font-size: 14px;
+  }
+  .mainHero{
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+    .myImg{
+      padding-top: 3rem;
+    }
+  }
+
+
+ }
+
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
