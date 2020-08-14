@@ -53,14 +53,7 @@ export const MainPage = () => {
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <h4>
-                  <a href="/about">More About Me</a>
-                </h4>
-                <h4>
-                <a
-              href="https://www.dropbox.com/s/zscji0weg7yodhn/Amalia%20Nurlita%20-%20Resume.pdf?dl=0"
-              rel="noopener noreferrer"
-              target="_blank"
-            >My Resume</a>
+                  <a href="/about">Contact Me</a>
                 </h4>
               </div>
             </Grid>
@@ -73,7 +66,7 @@ export const MainPage = () => {
       <section className="myProjects" id="project">
         <Container>
           <h5>
-            <span>______</span>My Latest Project
+            My Latest Project
           </h5>
           <div className="latestProject">
             <h1>Protra</h1>

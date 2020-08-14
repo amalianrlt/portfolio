@@ -40,7 +40,7 @@ export const AboutPage = () => {
       </section>
       <section className="reachOut">
         <Grid container>
-          <Grid item lg={7} xs={12}>
+          <Grid item lg={7} xs={12} md={6}>
             <div className="connect" id="contact">
               <h1>Let's Connect</h1>
               <h4>I always open for the opportunity, so let's connect or <br/> just to say hello!</h4>
@@ -51,7 +51,7 @@ export const AboutPage = () => {
               <a href="http://github.com/amalianrlt/" rel="noopener noreferrer" target="_blank"> <SvgIcon component={GitHubIcon} style={{ fontSize: 40 }}/></a>
             </div>
           </Grid>
-        <Grid item lg={5} xs={12}>
+        <Grid item lg={5} xs={12} md={6}>
           <div className="skills">
           <h1>Skills</h1>
           <div className="coding">
