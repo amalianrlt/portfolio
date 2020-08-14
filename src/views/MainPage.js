@@ -2,40 +2,20 @@
 import React from "react";
 import { Container, Grid, SvgIcon } from "@material-ui/core";
 import protra from "../styles/images/protra.svg";
-import { Link } from "react-router-dom";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import myImg from "../styles/images/pictt.jpg";
+import reactjs from "../styles/images/react.png";
+import sass from "../styles/images/sass.png";
+import reactstrap from "../styles/images/reactstrap.png";
+import redux from "../styles/images/redux.png";
+import Navbar from "../components/Navbar";
 
 export const MainPage = () => {
   return (
     <div className="mainPage">
-      <header>
-        <Link to="/">
-          <h1>An</h1>
-        </Link>
-        <nav className="right-side">
-          <h3>
-            <a href="#project">Projects</a>
-          </h3>
-          <h3>
-            <a
-              href="https://www.dropbox.com/s/zscji0weg7yodhn/Amalia%20Nurlita%20-%20Resume.pdf?dl=0"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Resume
-            </a>
-          </h3>
-          <Link to="/about">
-            <h3>About</h3>
-          </Link>
-          <h3>
-            <a href="#contact">Contact</a>
-          </h3>
-        </nav>
-      </header>
+      <Navbar/>
       <section className="mainHero" id="main">
         <Container maxWidth="lg">
           <Grid container>
@@ -53,7 +33,7 @@ export const MainPage = () => {
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <h4>
-                  <a href="/about">Contact Me</a>
+                  <a href="#contact">Contact Me</a>
                 </h4>
               </div>
             </Grid>
@@ -65,9 +45,7 @@ export const MainPage = () => {
       </section>
       <section className="myProjects" id="project">
         <Container>
-          <h5>
-            My Latest Project
-          </h5>
+          <h5>My Latest Project</h5>
           <div className="latestProject">
             <h1>Protra</h1>
             <h3>Solution for your Project Management</h3>
@@ -104,8 +82,45 @@ export const MainPage = () => {
           </div>
         </Container>
         <div className="protraImg">
+          <Container style={{ width: "100%", height: "80vh" }} className="videoProtra">
+            <iframe
+              className="youtubeProtra"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SJyj9QFvbnA"
+              title="Protra"
+            ></iframe>
+            {/* <img src={protra} alt="protra" className="protraImage" /> */}
+          </Container>
+        </div>
+        <div className="ourTeam">
           <Container>
-            <img src={protra} alt="protra" className="protraImage" />
+            <Grid container>
+              <Grid item xs={12} lg={5} sm={12} md={5}>
+                <h3>Our Team</h3>
+                <h5>
+                  Protra's Team consist of 6 peoples, three of them are Backend
+                  Developer, two of are from Frontend Developer and the rest is
+                  React Native. Our main feature is we have drag and drop
+                  function on the task, so user can simply dragging their task
+                  into another card, we have google login function and we also
+                  can invite members to our projects. From Frontend, I implement
+                  CRUD function for Task, Drag and Drop Function, and Google
+                  Authorization.
+                  <br />
+                </h5>
+                <h4>Technology</h4>
+                <div className="techs">
+                  <img className="tech" src={reactjs} alt="react" />
+                  <img className="tech" src={redux} alt="react" />
+                  <img className="tech" src={sass} alt="react" />
+                  <img className="tech" src={reactstrap} alt="react" />
+                </div>
+              </Grid>
+              <Grid item xs={12} lg={7} sm={12} md={7}>
+                <img src={protra} alt="protraImage" className="protraImage" />
+              </Grid>
+            </Grid>
           </Container>
         </div>
       </section>

@@ -26,34 +26,36 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
-header {
+.nav{
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
   position: fixed;
-  width: 100%;
+  padding: 1rem 4rem;
   z-index: 1000;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px 0 rgba(155, 155, 155, 0.2),
     0 6px 20px 0 rgba(163, 163, 163, 0.19);
-  .right-side {
-    display: flex;
-    transition: all 0.3s ease 0s;
-    h3 {
-      font-weight: 300;
-      margin: 0 1rem;
-      &:hover {
-        color: #f60157;
-        font-weight: 500;
-      }
-      a:hover {
-        color: #f60157;
-        font-weight: 500;
-      }
+  .logo {
+    padding: 15px 0;
+  }
+  h3 {
+    color: black;
+    margin-bottom: 1rem;
+    &:hover {
+      color: #f60157;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #f60157;
+      font-weight: 500;
     }
   }
 }
@@ -130,14 +132,45 @@ header {
       line-height: 2rem;
     }
   }
+  .ourTeam{
+    margin-bottom: 5rem;
+    h3 {
+      margin-top: 5rem;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #f60157;
+    }
+    h5{
+      font-weight: 300;
+      font-size: 1rem;
+      padding-right: 2.5rem;
+    }
+    h4{
+      margin-top: 2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .protraImage{
+      // padding: 1rem;
+      width: 100%;
+      border-radius: 3px;
+
+    }
+    .techs{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+      .tech{
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+      }
+    }
+  }
   .protraImg {
     margin: 15rem 0 6rem 0;
     // padding: 0 4rem;
-    .protraImage {
-      width: 100%;
-      // border: 1px solid rgba(246, 1, 87, 0.555);
-      border-radius: 10px;
-    }
   }
 }
 
@@ -157,7 +190,7 @@ header {
       margin-bottom: 4rem;
       a:hover {
         color: #f60157;
-        font-weight: 900;
+        font-weight: 500;
       }
     }
   }
@@ -190,44 +223,82 @@ header {
   }
 }
 
+.letsConnect {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding-left: 12rem;
+  .icons{
+    margin-top: 2rem;
+    align-items: center;
+    display: flex;
+      margin-bottom: 2rem;
+      a {
+        margin-right: 1rem;
+      }
+    }
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #f60157;
+  }
+  h4 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    a {
+      color: rgb(114, 114, 114);
+    }
+    a:hover {
+      color: #f60157;
+    }
+  }
+}
+
+
 .reachOut {
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding-left: 12rem;
-  .connect {
-    margin-top: 3rem;
-    h1 {
-      font-size: 2rem;
-      margin: 1rem 0;
+  .education{
+    h1{
+      font-size: 1.8rem;
     }
-    h4 {
-      font-weight: lighter;
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-    h2 {
-      margin-top: 1rem;
-      font-size: 2.2rem;
-      font-weight: 900;
-      letter-spacing: 1px;
-      a {
-        color: rgb(114, 114, 114);
-      }
-      a:hover {
-        color: #f60157;
-      }
-    }
-  }
-  .icons {
-    display: flex;
-    justify-content: flex-start;
+    h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
     margin-top: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
-    a {
-      margin-right: 1rem;
+    }
+    p{
+      font-weight: 300;
     }
   }
+  .courses{
+    margin-bottom: 3rem;
+    h1{
+      font-size: 1.8rem;
+      margin-top: 3rem;
+    }
+    h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
+    p{
+      font-weight: 300;
+      margin-bottom: .5rem;
+      padding-right: 1rem;
+    }
+  }
+  
   .skills {
     padding-right: 7rem;
     h1 {
@@ -374,13 +445,11 @@ header {
     }
   }
   .backTop {
-    svg {
-      font-size: 25px !important;
-    }
+    display: none;
   }
 
   .aboutMe {
-    padding: 6rem 0 0 0;
+    padding: 7rem 0 5rem 1rem;
     width: 100%;
     // max-width: 70rem;
     h1 {
@@ -391,23 +460,49 @@ header {
   .reachOut {
     margin: 0;
     padding:0 2rem;
-    .connect {
-      margin-top: 3rem;
-      h1 {
-        font-size: 2rem;
-        margin: 1rem 0;
+  }
+
+  .letsConnect {
+    padding-left: 0;
+    padding: 0 2rem;
+    .icons{
+      svg{
+        font-size: 35px !important;
       }
-      h2 {
-        font-size: 1.5rem;
       }
+    h2 {
+      font-size: 1.3rem;
     }
-    .icons {
-      margin-bottom: 2rem;
-      margin-top: 1rem;
-      svg {
-        font-size: 30px !important;
-      }
+  }
+ 
+  header{
+    padding-left: 1rem;
+    .h3{
+      font-size: 10px;
     }
+    .right-side{
+      flex-flow: column nowrap;
+      background-color: rgb(216, 216, 216);
+      // height: 100vh;
+    }
+  }
+
+  .videoProtra{
+    height: 20vh !important;
+    .youtubeProtra{
+      height: auto;
+      width: auto;
+    }
+  }
+
+  .ourTeam{
+    h3, h4, h5{
+      font-size: 18px !important;
+    }
+  }
+
+  .protraImage{
+    padding: 0 !important;
   }
 }
 
