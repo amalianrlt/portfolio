@@ -43,7 +43,7 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
         <h3><a href="/">Projects</a></h3> 
-        <h3><a href="https://www.dropbox.com/s/zscji0weg7yodhn/Amalia%20Nurlita%20-%20Resume.pdf?dl=0" rel="noopener noreferrer" target="_blank">Resume</a></h3>
+        <h3><a href="https://www.dropbox.com/s/zmnii0fahxo60jh/Amalia%20Nurlita%20Resume.pdf?dl=0" rel="noopener noreferrer" target="_blank">Resume</a></h3>
         <Link to="/about"><h3>About</h3></Link>
        <h3><a href="#contact">Contact</a></h3> 
     </Ul>
