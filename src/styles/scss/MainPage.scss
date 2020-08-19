@@ -9,6 +9,7 @@
 html,
 body {
   font-size: 16px;
+  background-color: #f4f4f4;
 }
 
 h1,
@@ -87,8 +88,14 @@ a {
     margin-top: 4rem;
     font-size: 1.3rem;
     font-weight: 500;
+    a{
+      background-color: black;
+      color: white;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+    }
     a:hover {
-      color: #f60157;
+      background-color: #f60157;
     }
   }
   .hero-btn {
@@ -137,7 +144,7 @@ a {
     h3 {
       margin-top: 5rem;
       font-weight: 800;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
       color: #f60157;
     }
@@ -145,6 +152,7 @@ a {
       font-weight: 300;
       font-size: 1rem;
       padding-right: 2.5rem;
+      line-height: 1.5rem;
     }
     h4{
       margin-top: 2rem;
@@ -206,8 +214,8 @@ a {
 
 .aboutMe {
   padding-top: 10rem;
-  padding-left: 11rem;
-  padding-right: 11rem;
+  padding-left: 10rem;
+  padding-right: 4rem;
   width: 100%;
   h1 {
     font-size: 3rem;
@@ -444,7 +452,7 @@ a {
   }
 
   .aboutMe {
-    padding: 7rem 0 5rem 1rem;
+    padding: 7rem 0 5rem 0;
     width: 100%;
     h1 {
       font-size: 2.5rem;
@@ -453,12 +461,12 @@ a {
 
   .reachOut {
     margin: 0;
-    padding:0 2rem;
+    padding:0 1rem;
   }
 
   .letsConnect {
     padding-left: 0;
-    padding: 0 2rem;
+    padding: 0 1rem;
     .icons{
       svg{
         font-size: 35px !important;

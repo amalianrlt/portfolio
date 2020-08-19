@@ -42,7 +42,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-        <h3><a href="/">Projects</a></h3> 
+        <Link to="/"><h3>Projects</h3></Link>
         <h3><a href="https://www.dropbox.com/s/p9pdbe9wji13fvk/Amalia%20Nurlita%20Resume.pdf?dl=0" rel="noopener noreferrer" target="_blank">Resume</a></h3>
         <Link to="/about"><h3>About</h3></Link>
        <h3><a href="#contact">Contact</a></h3> 
