@@ -5,7 +5,7 @@ import protra from "../styles/images/protra.svg";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import myImg from "../styles/images/pictt.jpg";
+import myImg from "../styles/images/amalia.jpg";
 import reactjs from "../styles/images/react.png";
 import sass from "../styles/images/sass.png";
 import reactstrap from "../styles/images/reactstrap.png";
