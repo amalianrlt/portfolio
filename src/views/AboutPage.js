@@ -77,7 +77,7 @@ export const AboutPage = () => {
          <div className="connect" id="contact">
               <h1>Let's Connect</h1>
               <h4>I always open for the opportunity, so let's connect or <br/> just to say hello!</h4>
-              <h2><a  href="mailto:amalianurlita97@gmail.com">amalianurlita97@gmail.com</a></h2>
+              <h2><a  href="mailto:amalianurlita14@gmail.com">amalianurlita14@gmail.com</a></h2>
             </div>
               <div className="icons">
               <a href="https://www.linkedin.com/in/amalia-nurlita-0b0a7a153/" rel="noopener noreferrer" target="_blank"><SvgIcon component={LinkedInIcon} style={{ fontSize: 50, }} className="linkedin"/></a>

@@ -18,15 +18,15 @@ export const MainPage = () => {
       <Navbar/>
       <section className="mainHero" id="main">
         <Container maxWidth="lg">
-          <Grid container>
+          <Grid container style={{justifyContent:'center', flexDirection:'row'}}>
             <Grid item xs={12} lg={8} sm={8} md={8}>
               <h1>
                 Hi, I'm <span>Amal</span>ia Nurlita
               </h1>
               <h3>
-                A Junior Frontend Developer, currently based in Indonesia. I'm
+                A Frontend Developer, currently based in Indonesia. I'm
                 passionate about improving my experiences in Programming, Design
-                and constantly looking to learn new things everyday.
+                and constantly looking to learn new things everyday. For now, I'm enjoying my role as a Mobile Application Developer.
               </h3>
               <div
                 className="desc"
@@ -148,7 +148,7 @@ export const MainPage = () => {
               </a>
             </h3>
             <h3>
-              <a href="mailto:amalianurlita97@gmail.com">Email</a>
+              <a href="mailto:amalianurlita14@gmail.com">Email</a>
             </h3>
           </div>
           <div className="copyright">

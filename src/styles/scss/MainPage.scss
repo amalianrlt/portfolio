@@ -30,7 +30,7 @@ a {
   color: #000000;
 }
 
-.nav{
+.nav {
   width: 100%;
   height: 4rem;
   align-items: center;
@@ -88,10 +88,10 @@ a {
     margin-top: 4rem;
     font-size: 1.3rem;
     font-weight: 500;
-    a{
+    a {
       background-color: black;
       color: white;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       border-radius: 4px;
     }
     a:hover {
@@ -139,7 +139,7 @@ a {
       line-height: 2rem;
     }
   }
-  .ourTeam{
+  .ourTeam {
     margin-bottom: 5rem;
     h3 {
       margin-top: 5rem;
@@ -148,27 +148,26 @@ a {
       margin-bottom: 1rem;
       color: #f60157;
     }
-    h5{
+    h5 {
       font-weight: 300;
       font-size: 1rem;
       padding-right: 2.5rem;
       line-height: 1.5rem;
     }
-    h4{
+    h4 {
       margin-top: 2rem;
       font-weight: 500;
       margin-bottom: 1rem;
     }
-    .protraImage{
+    .protraImage {
       width: 100%;
       border-radius: 3px;
-
     }
-    .techs{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 2rem;
-      .tech{
+    .techs {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+      .tech {
         width: 40px;
         height: 40px;
         margin-right: 1rem;
@@ -232,15 +231,15 @@ a {
   margin-top: 3rem;
   margin-bottom: 5rem;
   padding-left: 12rem;
-  .icons{
+  .icons {
     margin-top: 2rem;
     align-items: center;
     display: flex;
-      margin-bottom: 2rem;
-      a {
-        margin-right: 1rem;
-      }
+    margin-bottom: 2rem;
+    a {
+      margin-right: 1rem;
     }
+  }
   h1 {
     font-size: 2rem;
     margin: 1rem 0;
@@ -265,45 +264,44 @@ a {
   }
 }
 
-
 .reachOut {
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding-left: 12rem;
-  .education{
-    h1{
+  .education {
+    h1 {
       font-size: 1.8rem;
     }
-    h4{
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 2rem;
-    margin-top: 1rem;
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2rem;
+      margin-top: 1rem;
     }
-    p{
+    p {
       font-weight: 300;
     }
   }
-  .courses{
+  .courses {
     margin-bottom: 3rem;
-    h1{
+    h1 {
       font-size: 1.8rem;
       margin-top: 3rem;
     }
-    h4{
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
-    p{
+    p {
       font-weight: 300;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       padding-right: 1rem;
     }
   }
-  
+
   .skills {
     padding-right: 7rem;
     h1 {
@@ -379,13 +377,15 @@ a {
 }
 
 .myImg {
-  margin-left: 4rem;
-  margin-top: 1rem;
+  // margin-left: 4rem;
+  // margin-top: 1rem;
   border-radius: 50%;
-  width: 75%;
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
+  // width: 75%;
+  width: 15rem;
+  height: auto;
+  // object-fit: cover;
+  // background-size: cover;
+  // background-position: center;
 }
 
 //responsive
@@ -461,62 +461,69 @@ a {
 
   .reachOut {
     margin: 0;
-    padding:0 1rem;
+    padding: 0 1rem;
   }
 
   .letsConnect {
     padding-left: 0;
     padding: 0 1rem;
-    .icons{
-      svg{
+    .icons {
+      svg {
         font-size: 35px !important;
       }
-      }
+    }
     h2 {
       font-size: 1.3rem;
     }
   }
- 
-  header{
+
+  header {
     padding-left: 1rem;
-    .h3{
+    .h3 {
       font-size: 10px;
     }
-    .right-side{
+    .right-side {
       flex-flow: column nowrap;
       background-color: rgb(216, 216, 216);
     }
   }
 
-  .videoProtra{
+  .videoProtra {
     height: 20vh !important;
-    .youtubeProtra{
+    .youtubeProtra {
       height: auto;
       width: auto;
     }
   }
 
-  .ourTeam{
-    h3, h4, h5{
+  .ourTeam {
+    h3,
+    h4,
+    h5 {
       font-size: 18px !important;
     }
   }
 
-  .protraImage{
+  .protraImage {
     padding: 0 !important;
   }
 }
 
-@media (max-width: 991.98px) { 
+.swal2-content {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 991.98px) {
   html,
   body {
     font-size: 14px;
   }
-  .mainHero{
+  .mainHero {
     padding-bottom: 2rem;
     padding-top: 6rem;
-    .myImg{
+    .myImg {
       padding-top: 3rem;
     }
   }
- }
+}
