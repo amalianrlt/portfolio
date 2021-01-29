@@ -53,12 +53,9 @@ const RightNav = ({ open }) => {
       <Link to="/">
         <h3>Projects</h3>
       </Link>
-      {/* <Link to="/" */}
       <div style={{ cursor: "pointer" }} onClick={() => notification()}>
         <h3>Resume</h3>
       </div>
-      {/* </Link> */}
-      {/* <h3><a href="https://www.dropbox.com/s/p9pdbe9wji13fvk/Amalia%20Nurlita%20Resume.pdf?dl=0" rel="noopener noreferrer" target="_blank">Resume</a></h3> */}
       <Link to="/about">
         <h3>About</h3>
       </Link>
