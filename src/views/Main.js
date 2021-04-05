@@ -1,31 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect } from "react";
-import { Container, Grid, SvgIcon } from "@material-ui/core";
-import protra from "../styles/images/protra.svg";
+import React, { useState } from "react";
+import { Grid, SvgIcon } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-import NavigateBefore from "@material-ui/icons/NavigateBefore";
-import NavigateNext from "@material-ui/icons/NavigateNext";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import myImg from "../styles/images/amalia.jpg";
-import reactjs from "../styles/images/react.png";
-import sass from "../styles/images/sass.png";
-import reactstrap from "../styles/images/reactstrap.png";
-import redux from "../styles/images/redux.png";
 import Navbar from "../components/Navbar";
-import Modal from "../components/Modal";
 import Lottie from "react-lottie";
 import lottieMail from "../../src/lotties/mail-lottie.json";
 
 export const Main = () => {
-  const [show, setShow] = useState(false);
-  const [next, setNext] = useState(false);
   const [intro, setIntro] = useState(true);
   const [aboutMe, setAboutMe] = useState(false);
   const [experience, setExperience] = useState(false);
@@ -43,10 +28,10 @@ export const Main = () => {
 
   console.log(aboutMe);
 
-  useEffect(() => {
-    const body = document.querySelector("body");
-    body.style.overflow = show ? "hidden" : "auto";
-  }, [show]);
+  // useEffect(() => {
+  //   const body = document.querySelector("body");
+  //   body.style.overflow = show ? "hidden" : "auto";
+  // }, [show]);
 
   return (
     <div className="mainPage" style={{ maxHeight: "100vh" }}>

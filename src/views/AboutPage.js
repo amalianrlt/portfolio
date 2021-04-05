@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Container, Grid, SvgIcon } from "@material-ui/core";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import { Container, Grid } from "@material-ui/core";
 import Navbar from "../components/Navbar";
 
 export const AboutPage = () => {
