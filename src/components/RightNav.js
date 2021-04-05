@@ -51,6 +51,9 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <Link to="/">
+        <h3>Home</h3>
+      </Link>
+      <Link to="/project">
         <h3>Projects</h3>
       </Link>
       <div style={{ cursor: "pointer" }} onClick={() => notification()}>
@@ -59,9 +62,9 @@ const RightNav = ({ open }) => {
       <Link to="/about">
         <h3>About</h3>
       </Link>
-      <h3>
+      {/* <h3>
         <a href="#contact">Contact</a>
-      </h3>
+      </h3> */}
     </Ul>
   );
 };

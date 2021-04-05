@@ -12,40 +12,12 @@ import reactstrap from "../styles/images/reactstrap.png";
 import redux from "../styles/images/redux.png";
 import Navbar from "../components/Navbar";
 
-export const MainPage = () => {
+export const ProjectPage = () => {
   return (
     <div className="mainPage">
-      <Navbar/>
-      <section className="mainHero" id="main">
-        <Container maxWidth="lg">
-          <Grid container style={{justifyContent:'center', flexDirection:'row'}}>
-            <Grid item xs={12} lg={8} sm={8} md={8}>
-              <h1>
-                Hi, I'm <span>Amal</span>ia Nurlita
-              </h1>
-              <h3>
-                A Frontend Developer, currently based in Indonesia. I'm
-                passionate about improving my experiences in Programming, Design
-                and constantly looking to learn new things everyday. For now, I'm enjoying my role as a Mobile Application Developer.
-              </h3>
-              <div
-                className="desc"
-                style={{ display: "flex", alignItems: "center" }}
-              >
-                <h4>
-                  <a href="#contact">Contact Me</a>
-                </h4>
-              </div>
-            </Grid>
-            <Grid item xs={12} lg={4} sm={4} md={4}>
-              <img src={myImg} alt="myImg" className="myImg" />
-            </Grid>
-          </Grid>
-        </Container>
-      </section>
+      <Navbar />
       <section className="myProjects" id="project">
         <Container>
-          <h5>My Latest Project</h5>
           <div className="latestProject">
             <h1>Protra</h1>
             <h3>Solution for your Project Management</h3>
@@ -82,7 +54,10 @@ export const MainPage = () => {
           </div>
         </Container>
         <div className="protraImg">
-          <Container style={{ width: "100%", height: "80vh" }} className="videoProtra">
+          <Container
+            style={{ width: "100%", height: "80vh" }}
+            className="videoProtra"
+          >
             <iframe
               className="youtubeProtra"
               width="100%"
@@ -96,7 +71,7 @@ export const MainPage = () => {
         <div className="ourTeam">
           <Container>
             <Grid container>
-              <Grid item xs={12} lg={5} sm={12} md={5}>
+              <Grid item xs={12} lg={12} sm={12} md={5}>
                 <h3>Our Team</h3>
                 <h5>
                   Protra's Team consist of 6 peoples, three of them are Backend
@@ -117,53 +92,13 @@ export const MainPage = () => {
                   <img className="tech" src={reactstrap} alt="react" />
                 </div>
               </Grid>
-              <Grid item xs={12} lg={7} sm={12} md={7}>
+              <Grid item xs={12} lg={12} sm={12} md={7}>
                 <img src={protra} alt="protraImage" className="protraImage" />
               </Grid>
             </Grid>
           </Container>
         </div>
       </section>
-      <section className="otherProjects"></section>
-      <Container>
-        <div className="footer">
-          <h2>Contact me on : </h2>
-          <div className="socialMedia" id="contact">
-            <h3>
-              <a
-                href="https://www.linkedin.com/in/amalia-nurlita-0b0a7a153/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-            </h3>
-            <h3>
-              <a
-                href="http://github.com/amalianrlt/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Github
-              </a>
-            </h3>
-            <h3>
-              <a href="mailto:amalianurlita14@gmail.com">Email</a>
-            </h3>
-          </div>
-          <div className="copyright">
-            <h5>
-              <strong>Amalia Nurlita</strong> - Copyright © 2020
-            </h5>
-          </div>
-          <a href="#main">
-            <div className="backTop">
-              <SvgIcon component={ArrowUpwardIcon} style={{ fontSize: 40 }} />
-              <p>Back to the top</p>
-            </div>
-          </a>
-        </div>
-      </Container>
     </div>
   );
 };
